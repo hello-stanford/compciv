@@ -10,12 +10,12 @@ bash tx-dr.sh | sed -E 's/Native +American/Other/' | \
 # since we're discarding gender, we just need to substitute based
 # on the first character
 bash fl-dr.sh | sed s/B./Black/ | sed s/W./White/ | \
-   sed s/H./Hispanic/ | sed s/O./Other/ |\
+   sed s/H./Hispanic/ | sed s/O./Other/ | \
    sed s/^/FL,/
 
 # Printing California
 bash ca-dr.sh | sed s/WHI/White/ | sed s/BLA/Black/ | \
-   sed s/HIS/Hispanic/ | sed s/OTH/Other/ |
+   sed s/HIS/Hispanic/ | sed s/OTH/Other/ | \
    sed s/^/CA,/
 
 
